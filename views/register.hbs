@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogarth Wings</title>
+    <link rel="stylesheet" href="/css/registerpage.css">
+</head>
+<body>
+       {{> navbar }}  
+  
+<div class="container">
+
+
+<img src="https://media.glassdoor.com/sqll/806657/hogarth-worldwide-squarelogo-1424874040940.png" alt="" height="70" width="70">
+
+
+
+
+  <div class="card">
+    <h2>Hograth WorldWide</h2>
+
+    {{#if msg}}
+<p class="{{msg_type}}">{{msg}}</p>
+{{/if}}
+
+ <form action="/auth/register" method="post">
+
+<input type="email" name="email" id="email" placeholder="Email or Employee ID" class="control"><br>
+
+
+<input type="password" name="password" id="password" placeholder="Password" class="control"><br>
+
+<input type="password" name="cnfm_password" id="cnfm_password" class="control" placeholder="Confirm_Password"><br>
+
+
+{{!-- <a href="#">forgot password?</a><br> --}}
+
+<button type="submit" id="submit">Register Now</button>
+</form>
+
+<div class="footer">
+
+<label class="labe">are you already member?</label>  <a href="/">Login</a>
+</div>
+
+  </div>
+</div>
+
+
+
+
+
+</body>
+</html>
